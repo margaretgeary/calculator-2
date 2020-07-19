@@ -18,9 +18,12 @@ def calculator_two():
     #             quit
         quit()
     #         else:
+    elif token[0] == "+":
+        return add(int(token[1]), int(token[2]))
     else:
-        if token[0] == "+":
-            return add(int(token[1]), int(token[2]))
+        token[0] == "pow"
+        return power(int(token[1]), int(token[2]))
+
     #             (decide which math function to call based on first token)
     #             if the first token is 'pow':
     #                   call the power function with the other two tokens
